@@ -148,7 +148,7 @@ export default function CardFormDetails() {
                     <label htmlFor="expiry_date" className="text-sm lg:text-base">Exp. Date (MM/YY)</label>
                     <span>
                       <input
-                      className={`w-[40%] lg:w-24 mr-1 lg:mr-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                      className={`w-[42%] lg:w-24 mr-1 lg:mr-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                       type="text"
                       name="month"
                       id="month"
@@ -162,7 +162,7 @@ export default function CardFormDetails() {
             
                     <span>
                       <input
-                        className={`w-[40%] lg:w-24 ml-1 lg:ml-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                        className={`w-[42%] lg:w-24 ml-1 lg:ml-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                         type="text"
                         name="year"
                         id="year"
