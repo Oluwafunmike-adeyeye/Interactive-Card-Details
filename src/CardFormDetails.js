@@ -20,10 +20,7 @@ export default function CardFormDetails() {
     year: '',
   });
 
-  const initialCardDetails = "";
 
-
-  
   const validateForm = () => {
     const newErrors = {};
 
@@ -65,6 +62,8 @@ export default function CardFormDetails() {
       setConfirmed(true);
     }
   };
+
+  const initialCardDetails = "";
 
   const displayDetails = confirmed ? enteredCardDetails : initialCardDetails;
 
@@ -112,7 +111,7 @@ export default function CardFormDetails() {
             {!confirmed && (
               <form className="flex flex-col justify-center gap-8 max-w-lg lg:h-screen">
                 <div>
-                  <label htmlFor="cardholder_name" className="text-base">Cardholder Name</label>
+                  <label htmlFor="cardholder_name" className="text-sm lg:text-base">Cardholder Name</label>
                   <input
                     className={`rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                     type="text"
@@ -126,7 +125,7 @@ export default function CardFormDetails() {
                 </div>
 
                 <div className="mt-2">
-                  <label htmlFor="card_number" className="text-base">Card Number</label>
+                  <label htmlFor="card_number" className="text-sm lg:text-base">Card Number</label>
                   <input
                     className={`rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                     type="text"
@@ -146,10 +145,10 @@ export default function CardFormDetails() {
 
                 <article className="flex items-center w-full gap-2 lg:gap-8 mt-2">
                   <div className="w-[50%] lg:w-auto">
-                    <label htmlFor="expiry_date" className="text-base">Exp. Date (MM/YY)</label>
+                    <label htmlFor="expiry_date" className="text-sm lg:text-base">Exp. Date (MM/YY)</label>
                     <span>
                       <input
-                      className={`w-[46%] lg:w-24 mr-1 lg:mr-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                      className={`w-[45%] lg:w-24 mr-1 lg:mr-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                       type="text"
                       name="month"
                       id="month"
@@ -163,7 +162,7 @@ export default function CardFormDetails() {
             
                     <span>
                       <input
-                        className={`w-[46%] lg:w-24 ml-1 lg:ml-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                        className={`w-[45%] lg:w-24 ml-1 lg:ml-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                         type="text"
                         name="year"
                         id="year"
@@ -177,10 +176,10 @@ export default function CardFormDetails() {
                     {errors.year && <p className="text-red-500 text-xs mt-2 ml-2">{errors.year}</p>}
                   </div>
 
-                  <div className="w-[72%] lg:w-auto">
-                    <label htmlFor="cvc" className="text-base">CVC</label>
+                  <div className="w-[50%] lg:w-auto">
+                    <label htmlFor="cvc" className="text-sm lg:text-base">CVC</label>
                     <input
-                      className={`w-[200px] rounded-lg ${errors.cvc ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                      className={`w-[150px] rounded-lg ${errors.cvc ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                       type="text"
                       name="cvc"
                       id="cvc"
