@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import bgMobile from "./images/bg-main-mobile.png";
 import bgDesktop from "./images/bg-main-desktop.png";
 import logo from "./images/card-logo.svg";
@@ -13,13 +13,14 @@ export default function CardFormDetails() {
   const [year, setYear] = useState("");
   const [cvc, setCvc] = useState("");
   const [errors, setErrors] = useState({});
-  const [initialCardDetails, setInitialCardDetails] = useState("")
   const [enteredCardDetails, setEnteredCardDetails] = useState({
     name: '',
     cardNumber: '',
     month: '',
     year: '',
   });
+
+  const initialCardDetails = "";
 
 
   
