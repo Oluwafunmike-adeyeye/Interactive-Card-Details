@@ -144,11 +144,11 @@ export default function CardFormDetails() {
                 </div>
 
                 <article className="flex items-center w-full gap-2 lg:gap-8 mt-2">
-                  <div className="w-[50%] lg:w-auto">
+                  <div className="w-[70%] lg:w-auto">
                     <label htmlFor="expiry_date" className="text-sm lg:text-base">Exp. Date (MM/YY)</label>
                     <span>
                       <input
-                      className={`w-[45%] lg:w-24 mr-1 lg:mr-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                      className={`w-[40%] lg:w-24 mr-1 lg:mr-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                       type="text"
                       name="month"
                       id="month"
@@ -162,7 +162,7 @@ export default function CardFormDetails() {
             
                     <span>
                       <input
-                        className={`w-[45%] lg:w-24 ml-1 lg:ml-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                        className={`w-[40%] lg:w-24 ml-1 lg:ml-2 rounded-lg ${errors.year ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                         type="text"
                         name="year"
                         id="year"
@@ -176,10 +176,10 @@ export default function CardFormDetails() {
                     {errors.year && <p className="text-red-500 text-xs mt-2 ml-2">{errors.year}</p>}
                   </div>
 
-                  <div className="w-[50%] lg:w-auto">
+                  <div className="w-[45%] lg:w-auto">
                     <label htmlFor="cvc" className="text-sm lg:text-base">CVC</label>
                     <input
-                      className={`w-[150px] rounded-lg ${errors.cvc ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
+                      className={`w-[120px] rounded-lg ${errors.cvc ? 'border-red-500 border' : 'focus:border focus:border-[#6348FE]'}`}
                       type="text"
                       name="cvc"
                       id="cvc"
